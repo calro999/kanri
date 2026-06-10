@@ -1,8 +1,8 @@
-import { auth, signIn } from "@/auth"
+import { auth } from "@/auth"
 import { redirect } from "next/navigation"
-import { FcGoogle } from "react-icons/fc"
-import { FiLock, FiAlertTriangle, FiArrowRight } from "react-icons/fi"
+import { FiLock, FiAlertTriangle } from "react-icons/fi"
 import styles from "./page.module.css"
+import GoogleSignInButton from "./GoogleSignInButton"
 
 interface PageProps {
   searchParams: Promise<{
@@ -21,11 +21,6 @@ export default async function LoginPage({ searchParams }: PageProps) {
   const resolvedParams = await searchParams;
   const errorType = resolvedParams?.error;
   const isAccessDenied = errorType === "AccessDenied" || errorType === "Configuration";
-
-  async function handleGoogleLogin() {
-    "use server"
-    await signIn("google", { redirectTo: "/dashboard" })
-  }
 
   return (
     <main className={styles.container}>
@@ -53,12 +48,7 @@ export default async function LoginPage({ searchParams }: PageProps) {
         )}
 
         <div className={styles.authSection}>
-          <form action={handleGoogleLogin}>
-            <button type="submit" className={styles.loginBtn}>
-              <FcGoogle className={styles.btnIcon} />
-              <span>Google アカウントでログイン</span>
-            </button>
-          </form>
+          <GoogleSignInButton />
         </div>
 
         <div className={styles.footer}>
