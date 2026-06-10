@@ -1,0 +1,44 @@
+SNS公式アカウント
+* X (Twitter): https://x.com/YUI_YUTO_TH_JA
+* YouTube: https://www.youtube.com/@yuiyuto
+* Instagram: https://www.instagram.com/jlpt_thai_gal/
+* Facebook Group: https://www.facebook.com/groups/yuiyuto
+* TikTok: https://www.tiktok.com/@gal_novel_th_jp
+* Threads: https://www.threads.com/@jlpt_thai_gal
+* 楽天ルーム　https://room.rakuten.co.jp/jack555/items
+* note ゆい姉さん　https://note.com/yui_nee_san
+* note 心理学の武器庫　https://note.com/mind_weapons
+
+姉妹サイト（ゆいシリーズ）
+* ゆいとJLPT対策: https://jlpt.yui-yuto.com/ (JLPT合格を目指す無料の学習ゲーム)
+* ゆいとメイド喫茶: https://th-maid-gyaru-novel.yui-yuto.com/ (メイド喫茶で働きながら日本語を学ぶノベルゲーム)
+* ゆい先生と勉強: https://th-gyaru-novel.yui-yuto.com/ (教育実習生のゆい先生と日本語を学ぶストーリー)
+* ゆいと学園祭: https://th-school-fes.yui-yuto.com/ (日本の学園祭を体験しながら学ぶ日本語学習)
+* ゆいと東京観光: https://th-tokyo-gyaru.yui-yuto.com/ (東京観光を楽しみながら学べるシミュレーション)
+
+姉妹サイト（ゆうとシリーズ）
+* ゆうとと勉強: https://th-intern-romance.yui-yuto.com/ (インターンのゆうとと一緒に学ぶ日本語学習)
+* ゆうとと遠距離恋愛: https://th-distance-love.yui-yuto.com/ (日本へ帰ったゆうととの恋愛ノベルゲーム)
+* ゆうとと東京デート: https://th-tokyo-date.yui-yuto.com/ (東京デートを通じて実践的な日本語を習得)
+
+ポータル・学習・その他
+* YUI & YUTO 本家: https://yui-yuto.com/ (全プロジェクトを統括する学習総合ポータル)
+* 日本語クエスト: https://th-nihongo-quest.yui-yuto.com/ (RPG形式で楽しく語彙を増やす学習ゲーム)
+* タイピング日本語: https://nihongo-typing-th.yui-yuto.com/ (タイ人向けの日本語タイピング練習サイト)
+* ミミとタップ学習: https://th-kawaii-mimi-tap.yui-yuto.com/ (イラストをタップして学ぶ初心者向けゲーム)
+* 単語特化サイト: https://th-vocabulary-jp.yui-yuto.com/ (難しい単語や熟語を効率よく覚える専門サイト)
+* ニホンゴランド: https://nihongo-land.yui-yuto.com
+* 日本人向けタイ語学習サイト https://thaigo.yui-yuto.com/
+
+
+その他
+* トレンド情報サイト 　https://trend-delta.vercel.app/ （最新ニュースの自動更新サイト）
+* ゆい姉さんの恋愛相談　https://yui-love.vercel.app/ （自動で毎日恋愛相談記事を更新するサイト）
+* 原宿ネオ占い　https://harajuku-neo-uranai.vercel.app/ （自動で毎日占い記事を更新するサイト）
+* 増殖の庭　https://monster-garden.vercel.app/ （モンスターガーデン。勢力争いゲーム）
+* ぬりぬりぬりえ　https://nurinuri-nurie.vercel.app/ （毎日自動でぬりえ画像と記事を更新）
+* Aetheria　https://wall-eosin.vercel.app/ （毎日自動で壁紙画像と記事更新）
+* あくまれしぴ　https://akuma-recipe.vercel.app/ （毎日自動で斬新なレシピを画像付きで更新）
+* NIHON-GO!! https://nihon-go-kappa.vercel.app/ （毎日自動で英語圏向けの日本語学習記事を更新）
+* NEON NOIR　https://neon-noir-magazine.vercel.app/ （毎日自動でミステリー小説を画像付きで更新）
+* モノレポ！　https://monorepo-go.vercel.app/ （毎日自動でアマゾン商品のレビューを画像付きで更新）
