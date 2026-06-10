@@ -38,75 +38,97 @@
   letter-spacing: 0.1em;
 }
 
-.userInfo {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 2px solid var(--neon-cyan);
-  box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.avatar:hover {
-  transform: rotate(360deg);
-}
-
-.avatarFallback {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-cyan) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  color: var(--text-primary);
-  box-shadow: 0 0 10px rgba(157, 78, 221, 0.4);
-}
-
-.userDetails {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.userName {
-  font-size: 0.95rem;
+.logoSub {
+  font-size: 0.75rem;
   font-weight: 700;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  letter-spacing: 0.15em;
+  margin-left: 0.75rem;
+}
+
+.systemStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.statusText {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #10b981;
   letter-spacing: 0.05em;
 }
 
-.userEmail {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  opacity: 0.8;
+/* 背景ネオンエフェクト */
+.glowBg {
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(157, 78, 221, 0.12) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+  animation: floatBg 15s ease-in-out infinite alternate;
 }
 
-.logoutBtn {
-  background: rgba(239, 68, 68, 0.08);
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  color: #ef4444;
-  padding: 0.6rem;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+.glowBg2 {
+  position: fixed;
+  bottom: -10%;
+  right: -10%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+  animation: floatBg2 18s ease-in-out infinite alternate;
 }
 
-.logoutBtn:hover {
-  background: rgba(239, 68, 68, 0.2);
-  border-color: #ef4444;
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+@keyframes floatBg {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(10vw, 5vh) scale(1.1);
+  }
+}
+
+@keyframes floatBg2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-8vw, -6vh) scale(1.15);
+  }
 }
 
 /* メインレイアウト */

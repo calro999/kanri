@@ -1,12 +1,9 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { signOut as firebaseSignOut } from "firebase/auth"
-import { auth } from "@/lib/firebase"
 import { Project } from "@/data/projects"
 import { 
   FiSearch, 
-  FiLogOut, 
   FiExternalLink, 
   FiGrid, 
   FiMessageCircle, 
@@ -19,34 +16,15 @@ import {
 import styles from "./dashboard.module.css"
 
 interface DashboardClientProps {
-  user: {
-    name: string;
-    email: string;
-    image: string;
-  };
   initialProjects: Project[];
 }
 
 type CategoryFilter = "all" | "sns" | "yui" | "yuto" | "portal" | "other";
 
-export default function DashboardClient({ user, initialProjects }: DashboardClientProps) {
+export default function DashboardClient({ initialProjects }: DashboardClientProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("all")
   const [isPending, startTransition] = useTransition()
-
-  // ログアウト処理
-  const handleLogout = async () => {
-    try {
-      await firebaseSignOut(auth);
-    } catch (error) {
-      console.error("Firebase Signout error:", error);
-    }
-    // Cookie の消去
-    document.cookie = "user_email=; path=/; max-age=0";
-    document.cookie = "user_name=; path=/; max-age=0";
-    document.cookie = "user_image=; path=/; max-age=0";
-    window.location.href = "/";
-  }
 
   // フィルタリング処理
   const filteredProjects = initialProjects.filter((project) => {
@@ -106,24 +84,19 @@ export default function DashboardClient({ user, initialProjects }: DashboardClie
 
   return (
     <div className={styles.dashboardContainer}>
+      {/* 背景ネオンエフェクト */}
+      <div className={styles.glowBg}></div>
+      <div className={styles.glowBg2}></div>
+
       {/* ナビゲーションバー */}
       <header className={`${styles.header} glass-panel`}>
         <div className={styles.logo}>
-          <span className="text-gradient">KANRI.DASHBOARD</span>
+          <span className="text-gradient">YUI & YUTO</span>
+          <span className={styles.logoSub}>PORTAL DASHBOARD</span>
         </div>
-        <div className={styles.userInfo}>
-          {user.image ? (
-            <img src={user.image} alt={user.name} className={styles.avatar} />
-          ) : (
-            <div className={styles.avatarFallback}>{user.name.charAt(0)}</div>
-          )}
-          <div className={styles.userDetails}>
-            <span className={styles.userName}>{user.name}</span>
-            <span className={styles.userEmail}>{user.email}</span>
-          </div>
-          <button onClick={handleLogout} className={styles.logoutBtn} title="ログアウト">
-            <FiLogOut />
-          </button>
+        <div className={styles.systemStatus}>
+          <span className={styles.statusDot}></span>
+          <span className={styles.statusText}>ALL SYSTEMS ACTIVE</span>
         </div>
       </header>
 
@@ -211,3 +184,4 @@ export default function DashboardClient({ user, initialProjects }: DashboardClie
     </div>
   )
 }
+
