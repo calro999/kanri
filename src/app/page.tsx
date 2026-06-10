@@ -1,4 +1,4 @@
-import { auth } from "@/auth"
+import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 import { FiLock, FiAlertTriangle } from "react-icons/fi"
 import styles from "./page.module.css"
@@ -11,16 +11,17 @@ interface PageProps {
 }
 
 export default async function LoginPage({ searchParams }: PageProps) {
-  const session = await auth()
+  const cookieStore = await cookies()
+  const userEmail = cookieStore.get("user_email")?.value
 
-  // 既に制限対象の正しい管理者としてログイン済みならダッシュボードへ遷移
-  if (session?.user?.email === "mattan029@gmail.com") {
+  // 既にログイン済みならダッシュボードへ遷移
+  if (userEmail === "mattan029@gmail.com") {
     redirect("/dashboard")
   }
 
   const resolvedParams = await searchParams;
   const errorType = resolvedParams?.error;
-  const isAccessDenied = errorType === "AccessDenied" || errorType === "Configuration";
+  const isAccessDenied = errorType === "AccessDenied";
 
   return (
     <main className={styles.container}>

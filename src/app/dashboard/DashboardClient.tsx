@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { signOut } from "next-auth/react"
+import { signOut as firebaseSignOut } from "firebase/auth"
+import { auth } from "@/lib/firebase"
 import { Project } from "@/data/projects"
 import { 
   FiSearch, 
@@ -34,8 +35,17 @@ export default function DashboardClient({ user, initialProjects }: DashboardClie
   const [isPending, startTransition] = useTransition()
 
   // ログアウト処理
-  const handleLogout = () => {
-    signOut({ redirectTo: "/" })
+  const handleLogout = async () => {
+    try {
+      await firebaseSignOut(auth);
+    } catch (error) {
+      console.error("Firebase Signout error:", error);
+    }
+    // Cookie の消去
+    document.cookie = "user_email=; path=/; max-age=0";
+    document.cookie = "user_name=; path=/; max-age=0";
+    document.cookie = "user_image=; path=/; max-age=0";
+    window.location.href = "/";
   }
 
   // フィルタリング処理
