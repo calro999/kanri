@@ -27,17 +27,10 @@ export default async function LoginPage({ searchParams }: PageProps) {
     await signIn("google", { redirectTo: "/dashboard" })
   }
 
-  async function handleDemoLogin() {
-    "use server"
-    await signIn("demo-login", {
-      email: "mattan029@gmail.com",
-      redirectTo: "/dashboard"
-    })
-  }
-
   return (
     <main className={styles.container}>
       <div className={styles.glowBg}></div>
+      <div className={styles.glowBg2}></div>
       <div className={`${styles.card} glass-panel`}>
         <div className={styles.header}>
           <div className={styles.logoIcon}>
@@ -64,17 +57,6 @@ export default async function LoginPage({ searchParams }: PageProps) {
             <button type="submit" className={styles.loginBtn}>
               <FcGoogle className={styles.btnIcon} />
               <span>Google アカウントでログイン</span>
-            </button>
-          </form>
-
-          <div className={styles.divider}>
-            <span>または (開発・検証用)</span>
-          </div>
-
-          <form action={handleDemoLogin}>
-            <button type="submit" className={styles.demoBtn}>
-              <span>デモ管理者としてログイン</span>
-              <FiArrowRight className={styles.btnIconRight} />
             </button>
           </form>
         </div>
