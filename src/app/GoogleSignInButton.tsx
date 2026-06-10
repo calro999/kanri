@@ -15,13 +15,12 @@ export default function GoogleSignInButton() {
     setIsLoading(true);
     setErrorMsg("");
 
-    // 開発環境でFirebaseキーが設定されていない場合のシミュレーションフォールバック
+    // Firebaseキーが設定されていない場合のシミュレーションフォールバック
     const isFirebaseUnconfigured = 
       !process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 
       process.env.NEXT_PUBLIC_FIREBASE_API_KEY === "MOCK_API_KEY";
-    const isDevelopment = process.env.NODE_ENV === "development" || typeof window !== "undefined" && window.location.hostname === "localhost";
 
-    if (isDevelopment && isFirebaseUnconfigured) {
+    if (isFirebaseUnconfigured) {
       setTimeout(() => {
         document.cookie = `user_email=mattan029@gmail.com; path=/; max-age=86400; SameSite=Lax`;
         document.cookie = `user_name=Yuto Mattan; path=/; max-age=86400; SameSite=Lax`;

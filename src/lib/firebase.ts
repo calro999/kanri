@@ -12,7 +12,26 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+const getFirebaseApp = () => {
+  if (getApps().length > 0) {
+    return getApp();
+  }
+
+  // APIキーが設定されていない場合の安全なフォールバック
+  const hasConfig = !!process.env.NEXT_PUBLIC_FIREBASE_API_KEY && process.env.NEXT_PUBLIC_FIREBASE_API_KEY !== "MOCK_API_KEY";
+  if (!hasConfig) {
+    return initializeApp({
+      apiKey: "MOCK_API_KEY",
+      authDomain: "mock.firebaseapp.com",
+      projectId: "mock-project",
+    });
+  }
+
+  return initializeApp(firebaseConfig);
+};
+
+const app = getFirebaseApp();
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
+
