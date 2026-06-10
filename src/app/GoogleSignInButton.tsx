@@ -14,6 +14,23 @@ export default function GoogleSignInButton() {
   const handleLogin = async () => {
     setIsLoading(true);
     setErrorMsg("");
+
+    // 開発環境でFirebaseキーが設定されていない場合のシミュレーションフォールバック
+    const isFirebaseUnconfigured = 
+      !process.env.NEXT_PUBLIC_FIREBASE_API_KEY || 
+      process.env.NEXT_PUBLIC_FIREBASE_API_KEY === "MOCK_API_KEY";
+    const isDevelopment = process.env.NODE_ENV === "development" || typeof window !== "undefined" && window.location.hostname === "localhost";
+
+    if (isDevelopment && isFirebaseUnconfigured) {
+      setTimeout(() => {
+        document.cookie = `user_email=mattan029@gmail.com; path=/; max-age=86400; SameSite=Lax`;
+        document.cookie = `user_name=Yuto Mattan; path=/; max-age=86400; SameSite=Lax`;
+        document.cookie = `user_image=${encodeURIComponent("https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80")}; path=/; max-age=86400; SameSite=Lax`;
+        window.location.href = "/dashboard";
+      }, 1200);
+      return;
+    }
+
     try {
       const result = await signInWithPopup(auth, googleProvider);
       const user = result.user;
