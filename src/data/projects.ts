@@ -253,5 +253,20 @@ export const projects: Project[] = [
     url: "https://monorepo-go.vercel.app/",
     description: "厳選されたAmazonガジェットやおすすめ商品のレビュー記事を画像付きで自動投稿する物欲刺激メディア。",
     category: "other"
+  },
+  {
+    id: "other-nihon-note",
+    name: "NIHON-NOTE",
+    url: "https://thai-note.vercel.app/",
+    description: "タイ人向けの1日1ページ自動更新される日本語ノート。",
+    category: "other"
+  },
+  {
+    id: "other-monorepo-hatena",
+    name: "ものレポ！（はてなブログ版）",
+    url: "https://mono-repo.hatenablog.jp/",
+    description: "ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに自動更新。",
+    category: "other"
   }
 ];
+

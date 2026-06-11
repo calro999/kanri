@@ -42,3 +42,6 @@ SNS公式アカウント
 * NIHON-GO!! https://nihon-go-kappa.vercel.app/ （毎日自動で英語圏向けの日本語学習記事を更新）
 * NEON NOIR　https://neon-noir-magazine.vercel.app/ （毎日自動でミステリー小説を画像付きで更新）
 * モノレポ！　https://monorepo-go.vercel.app/ （毎日自動でアマゾン商品のレビューを画像付きで更新）
+* NIHON-NOTE　https://thai-note.vercel.app/ （タイ人向けの1日1ページ自動更新される日本語ノート）
+* ものレポ！（はてなブログ版）　https://mono-repo.hatenablog.jp/ （ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに自動更新）
+
