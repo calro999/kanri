@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     id: "sns-youtube",
     name: "YouTube",
-    url: "https://www.youtube.com/@yuiyuto",
+    url: "https://www.youtube.com/@yui-yuto-th",
     description: "公式YouTubeチャンネル。日本語とタイ語の学習コンテンツやゲームプレイ動画を投稿中。",
     category: "sns"
   },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     id: "sns-tiktok",
     name: "TikTok",
-    url: "https://www.tiktok.com/@gal_novel_th_jp",
+    url: "https://www.tiktok.com/@yui_yuto_sensei",
     description: "公式TikTok。ギャルと学ぶ日本語ショート動画などを配信中。",
     category: "sns"
   },
