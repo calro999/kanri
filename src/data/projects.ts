@@ -195,7 +195,7 @@ export const projects: Project[] = [
     id: "other-yui-love",
     name: "ゆい姉さんの恋愛相談",
     url: "https://yui-love.vercel.app/",
-    description: "お悩みにゆい姉さんが回答する形で、毎日自動更新される恋愛相談キュレーションサイト。",
+    description: "お悩みにゆい姉さんが回答する形で、毎日更新される恋愛相談キュレーションサイト。",
     category: "other"
   },
   {
@@ -216,63 +216,63 @@ export const projects: Project[] = [
     id: "other-nurinuri",
     name: "ぬりぬりぬりえ",
     url: "https://nurinuri-nurie.vercel.app/",
-    description: "毎日AIが自動でぬりえ線画と紹介記事を更新するイラスト塗り絵サイト。",
+    description: "毎日ぬりえ線画と紹介記事を更新するイラスト塗り絵サイト。",
     category: "other"
   },
   {
     id: "other-aetheria",
     name: "Aetheria",
     url: "https://wall-eosin.vercel.app/",
-    description: "毎日自動で幻想的なオリジナル壁紙画像と記事を生成・更新するアートギャラリー。",
+    description: "毎日幻想的なオリジナル壁紙画像と記事を生成・更新するアートギャラリー。",
     category: "other"
   },
   {
     id: "other-recipe",
     name: "あくまれしぴ",
     url: "https://akuma-recipe.vercel.app/",
-    description: "美味しすぎて悪魔的な魅力を持つ斬新な料理レシピを、画像付きで毎日自動更新するグルメサイト。",
+    description: "美味しすぎて悪魔的な魅力を持つ斬新な料理レシピを、画像付きで毎日更新するグルメサイト。",
     category: "other"
   },
   {
     id: "other-nihongo-kappa",
     name: "NIHON-GO!!",
     url: "https://nihon-go-kappa.vercel.app/",
-    description: "英語圏の日本語学習者をターゲットに、分かりやすい表現で毎日レッスン記事を自動更新。",
+    description: "英語圏の日本語学習者をターゲットに、分かりやすい表現で毎日レッスン記事更新。",
     category: "other"
   },
   {
     id: "other-neon-noir",
     name: "NEON NOIR",
     url: "https://neon-noir-magazine.vercel.app/",
-    description: "サイバーパンク調のダークな短編ミステリー小説を、ビジュアル付きで毎日自動執筆・更新。",
+    description: "サイバーパンク調のダークな短編ミステリー小説を、ビジュアル付きで毎日情報執筆・更新。",
     category: "other"
   },
   {
     id: "other-monorepo",
     name: "モノレポ！",
     url: "https://monorepo-go.vercel.app/",
-    description: "厳選されたAmazonガジェットやおすすめ商品のレビュー記事を画像付きで自動投稿する物欲刺激メディア。",
+    description: "厳選されたAmazonガジェットやおすすめ商品のレビュー記事を画像付き投稿する物欲刺激メディア。",
     category: "other"
   },
   {
     id: "other-nihon-note",
     name: "NIHON-NOTE",
     url: "https://thai-note.vercel.app/",
-    description: "タイ人向けの1日1ページ自動更新される日本語ノート。",
+    description: "タイ人向けの1日1ページ更新される日本語ノート。",
     category: "other"
   },
   {
     id: "other-monorepo-hatena",
     name: "ものレポ！（はてなブログ版）",
     url: "https://mono-repo.hatenablog.jp/",
-    description: "ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに自動更新。",
+    description: "ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに更新。",
     category: "other"
   },
   {
     id: "other-book-muryo",
     name: "無料本・おすすめ本レビュー（はてなブログ版）",
     url: "https://book-muryo.hateblo.jp/",
-    description: "1時間ごとに楽天API経由で最新の本をレビューするブログ。",
+    description: "1時間ごとに楽天経由で最新の本をレビューするブログ。",
     category: "other"
   },
   {
@@ -280,6 +280,13 @@ export const projects: Project[] = [
     name: "みっけホビー",
     url: "https://mikke-hobby.hatenablog.com/",
     description: "最新のかわいいものの最新情報を楽天から取得して1日に24回最新情報を掲載するはてなブログ",
+    category: "other"
+  },
+  {
+    id: "other-mikke-squeeze",
+    name: "みっけスクイーズ",
+    url: "https://mikke-squeeze.blogspot.com/",
+    description: "楽天の注目スクイーズなどを毎日24商品紹介！",
     category: "other"
   }
 ];
