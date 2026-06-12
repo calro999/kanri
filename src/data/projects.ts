@@ -288,6 +288,13 @@ export const projects: Project[] = [
     url: "https://mikke-squeeze.blogspot.com/",
     description: "楽天の注目スクイーズなどを毎日24商品紹介！",
     category: "other"
+  },
+  {
+    id: "other-mikke-3D",
+    name: "みっけフィラメント",
+    url: "https://3dprint-filament.blogspot.com/",
+    description: "楽天の注目フィラメントなどを毎日24商品紹介！",
+    category: "other"
   }
 ];
 
