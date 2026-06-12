@@ -274,6 +274,13 @@ export const projects: Project[] = [
     url: "https://book-muryo.hateblo.jp/",
     description: "1時間ごとに楽天API経由で最新の本をレビューするブログ。",
     category: "other"
+  },
+  {
+    id: "other-mikke-hobby",
+    name: "みっけホビー",
+    url: "https://mikke-hobby.hatenablog.com/",
+    description: "最新のかわいいものの最新情報を楽天から取得して1日に24回最新情報を掲載するはてなブログ",
+    category: "other"
   }
 ];
 
