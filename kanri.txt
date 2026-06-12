@@ -44,4 +44,6 @@ SNS公式アカウント
 * モノレポ！　https://monorepo-go.vercel.app/ （毎日自動でアマゾン商品のレビューを画像付きで更新）
 * NIHON-NOTE　https://thai-note.vercel.app/ （タイ人向けの1日1ページ自動更新される日本語ノート）
 * ものレポ！（はてなブログ版）　https://mono-repo.hatenablog.jp/ （ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに自動更新）
+* 無料本・おすすめ本レビュー（はてなブログ版）　https://book-muryo.hateblo.jp/ （1時間ごとに楽天API経由で最新の本をレビューするブログ）
+
 

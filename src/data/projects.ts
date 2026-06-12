@@ -267,6 +267,13 @@ export const projects: Project[] = [
     url: "https://mono-repo.hatenablog.jp/",
     description: "ものレポ！のはてなブログ版でアマゾンのおすすめ商品レビューを3時間ごとに自動更新。",
     category: "other"
+  },
+  {
+    id: "other-book-muryo",
+    name: "無料本・おすすめ本レビュー（はてなブログ版）",
+    url: "https://book-muryo.hateblo.jp/",
+    description: "1時間ごとに楽天API経由で最新の本をレビューするブログ。",
+    category: "other"
   }
 ];
 
