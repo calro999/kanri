@@ -297,6 +297,13 @@ export const projects: Project[] = [
     category: "other"
   },
   {
+    id: "other-blogger-squeeze",
+    name: "贅沢スクイーズLife",
+    url: "https://luxury-squeeze.blogspot.com//",
+    description: "「極上の触感・とろける柔らかさ」を持つ大人のためのプレミアム海外スクイーズ専門カタログ",
+    category: "other"
+  },
+  {
     id: "other-mikke-3D",
     name: "みっけフィラメント",
     url: "https://3dprint-filament.blogspot.com/",
