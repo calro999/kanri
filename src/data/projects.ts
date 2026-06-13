@@ -290,6 +290,13 @@ export const projects: Project[] = [
     category: "other"
   },
   {
+    id: "other-mikke-kawaii",
+    name: "れあかわグッズ",
+    url: "https://premium-kawaii.blogspot.com/",
+    description: "限定のサンリオグッズなどを毎日24商品紹介！",
+    category: "other"
+  },
+  {
     id: "other-mikke-3D",
     name: "みっけフィラメント",
     url: "https://3dprint-filament.blogspot.com/",
