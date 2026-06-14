@@ -303,6 +303,13 @@ export const projects: Project[] = [
     description: "「極上の触感・とろける柔らかさ」を持つ大人のためのプレミアム海外スクイーズ専門カタログ",
     category: "other"
   },
+    {
+    id: "other-blogger-bad",
+    name: "×◯（バツマル）印のお宝クロニクル 〜大人女子のための限定キャラグッズ＆激レア文具検索〜",
+    url: "https://batsumaru-style.blogspot.com/",
+    description: "レアなバツ丸グッズ専門サイト",
+    category: "other"
+  },
   {
     id: "other-mikke-3D",
     name: "みっけフィラメント",
