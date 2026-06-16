@@ -30,6 +30,13 @@ export const projects: Project[] = [
     category: "sns"
   },
   {
+    id: "sns-instagram",
+    name: "Instagram",
+    url: "https://www.instagram.com/jack_room555/",
+    description: "楽天ルームの商品紹介。",
+    category: "sns"
+  },
+  {
     id: "sns-facebook-group",
     name: "Facebook Group",
     url: "https://www.facebook.com/groups/yuiyuto",
@@ -51,10 +58,24 @@ export const projects: Project[] = [
     category: "sns"
   },
   {
+    id: "sns-threads",
+    name: "Threads",
+    url: "https://www.threads.com/@jack_room555",
+    description: "楽天ルームの商品紹介。",
+    category: "sns"
+  },
+  {
     id: "sns-rakuten-room",
     name: "楽天ルーム",
     url: "https://room.rakuten.co.jp/jack555/items",
     description: "おすすめグッズや便利アイテムをまとめた楽天ルーム。",
+    category: "sns"
+  },
+  {
+    id: "sns-facebook-group",
+    name: "Facebook Group",
+    url: "https://www.facebook.com/groups/yuiyuto",
+    description: "楽天ルームの商品紹介用Facebookグループ。",
     category: "sns"
   },
   {
@@ -303,7 +324,7 @@ export const projects: Project[] = [
     description: "「極上の触感・とろける柔らかさ」を持つ大人のためのプレミアム海外スクイーズ専門カタログ",
     category: "other"
   },
-    {
+  {
     id: "other-blogger-bad",
     name: "×◯（バツマル）印のお宝クロニクル 〜大人女子のための限定キャラグッズ＆激レア文具検索〜",
     url: "https://batsumaru-style.blogspot.com/",
