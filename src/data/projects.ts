@@ -332,10 +332,38 @@ export const projects: Project[] = [
     category: "other"
   },
   {
+    id: "other-blogger-gift",
+    name: "ギフト選びならギフル！センスが光るトレンド贈り物とご褒美スイーツ",
+    url: "gift-sweet.blogspot.com/",
+    description: "ギフト選びの専門サイト！ギフルで自分にも大切な人にもぴったりなギフトを見つけよう！",
+    category: "other"
+  },
+  {
     id: "other-mikke-3D",
     name: "みっけフィラメント",
     url: "https://3dprint-filament.blogspot.com/",
     description: "楽天の注目フィラメントなどを毎日24商品紹介！",
+    category: "other"
+  },
+  {
+    id: "other-game",
+    name: "JUST SLASH BURST",
+    url: "https://just-slash-burst.vercel.app/",
+    description: "新感覚の弾幕ゲーム！？ソードで弾幕を斬れ！",
+    category: "other"
+  },
+  {
+    id: "other-english",
+    name: "patreon-japverse",
+    url: "https://www.patreon.com/c/jack_555/",
+    description: "英語圏の全ての人に向けた日本語学習サイト",
+    category: "other"
+  },
+  {
+    id: "other-english",
+    name: "substack-japverse",
+    url: "https://substack.com/@japaversestudio/",
+    description: "英語圏の全ての人に向けた日本語学習サイト",
     category: "other"
   }
 ];
