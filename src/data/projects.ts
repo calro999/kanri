@@ -16,6 +16,27 @@ export const projects: Project[] = [
     category: "sns"
   },
   {
+    id: "sns-x",
+    name: "X (Twitter)",
+    url: "https://x.com/jack_room555",
+    description: "楽天ルーム用の公式X（旧Twitter）アカウント。",
+    category: "sns"
+  },
+  {
+    id: "sns-x",
+    name: "X (Twitter)",
+    url: "https://x.com/CRAZYCHILL555",
+    description: "スズリ用の公式X（旧Twitter）アカウント。",
+    category: "sns"
+  },
+  {
+    id: "sns-x",
+    name: "X (Twitter)",
+    url: "https://x.com/jack_pr001",
+    description: "背徳用の公式X（旧Twitter）アカウント。",
+    category: "sns"
+  },
+  {
     id: "sns-youtube",
     name: "YouTube",
     url: "https://www.youtube.com/@yui-yuto-th",
@@ -364,6 +385,69 @@ export const projects: Project[] = [
     name: "substack-japverse",
     url: "https://substack.com/@japaversestudio/",
     description: "英語圏の全ての人に向けた日本語学習サイト",
+    category: "other"
+  },
+  {
+    id: "other-ero",
+    name: "背徳の深夜書斎",
+    url: "https://haitoku.pages.dev/",
+    description: "背徳の深夜書斎",
+    category: "other"
+  },
+  {
+    id: "other-ero",
+    name: "バクロファイル",
+    url: "https://er-2.pages.dev/",
+    description: "バクロファイル",
+    category: "other"
+  },
+  {
+    id: "other-ero",
+    name: "美女クロニクル",
+    url: "https://er-3.pages.dev/",
+    description: "美女クロニクル",
+    category: "other"
+  },
+  {
+    id: "other-item",
+    name: "SUZURI",
+    url: "https://suzuri.jp/CRAZYCHILL/",
+    description: "CRAZY CHILLのスズリ支店",
+    category: "other"
+  },
+  {
+    id: "other-item",
+    name: "Tシャツトリニティ",
+    url: "https://www.ttrinity.jp/shop/crazy_chill/",
+    description: "CRAZY CHILLのttr支店",
+    category: "other"
+  },
+  {
+    id: "other-item",
+    name: "BASE",
+    url: "https://jack555.official.ec/",
+    description: "CRAZY CHILLのBASE支店",
+    category: "other"
+  },
+  {
+    id: "other-travel",
+    name: "楽天トラベル ー旅びよりー",
+    url: "https://croud-travel.pages.dev/",
+    description: "国内旅行専門のレビューサイト",
+    category: "other"
+  },
+  {
+    id: "other-youtube",
+    name: "Ancient Echoes",
+    url: "https://www.youtube.com/@ancient-echoes555",
+    description: "英語の名言動画",
+    category: "other"
+  },
+  {
+    id: "other-tiktok",
+    name: "Ancient Echoes",
+    url: "https://www.tiktok.com/@ancientechoes",
+    description: "英語の名言動画",
     category: "other"
   }
 ];
